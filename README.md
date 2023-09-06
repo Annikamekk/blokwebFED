@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Ssfirstpage.PNG" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/sssecondpage.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -58,7 +58,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  Aan het begin zegt de screenreader 'Heading 4' en dan 'choose your region' en leest hij alle talen voor waardoor 
+  je heel verward raakt.
 
+IDe links worden niet goed uitgelegd en wat ik zie, is niet wat ik hoor, zoals de plaatjes die naar de volgende pagina gaan zijn niet te lezen en heel onduidelijk(mensen met en zonder screenreader)
+Foto is het gehele link, niet alleen de button op de foto. 
+
+Gaat eerst naar de talen, dan de navigatie balk, dan naar absoluut drankjes die ik niet zie staan dan naar de titel en dan naar de foto die je als eerste ziet om naar de volgende pagina te gaan. 
+
+De WCAG checklist ook ingevuld, en het is behoorlijk slecht gegaan. Bijna bij elk puntje in er wel wat aan de hand. Vooral over de indeling en de niet semantieke HTML. 
 </details>
 
 
