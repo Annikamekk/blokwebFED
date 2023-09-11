@@ -41,15 +41,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/Ssfirstpage.PNG" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/firstpage.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/sssecondpage.PNG" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/secondpage.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
-
+#2B418F,#CED8FB,#D9E1FF,#E3E9FD,#F3F6FF,#2B418F,#CED8FB,#D9E1FF
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
@@ -68,6 +68,12 @@ Foto is het gehele link, niet alleen de button op de foto.
 Gaat eerst naar de talen, dan de navigatie balk, dan naar absoluut drankjes die ik niet zie staan dan naar de titel en dan naar de foto die je als eerste ziet om naar de volgende pagina te gaan. 
 
 De WCAG checklist ook ingevuld, en het is behoorlijk slecht gegaan. Bijna bij elk puntje in er wel wat aan de hand. Vooral over de indeling en de niet semantieke HTML. 
+
+
+De header van ABSOLUT. is een  foto als ik het goed zie en is niet geheel 1 kleur, dus moet kijken hoe ik dat ga doen en als het font niet gaat werken wat ik wel ga doen. 
+
+Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet kijken of het aan mij ligt of aan iets anders ligt. ik hoop aan mezelf en het kan fixen en anders moet ik er iets anders op vinden. Tot nu toe denk ik dat IMPACT het beste past bij de headers en ook nog een ander font, maar die moet ik nog een beetje uitvinden. 
+
 </details>
 
 
@@ -78,7 +84,7 @@ De WCAG checklist ook ingevuld, en het is behoorlijk slecht gegaan. Bijna bij el
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Screenshotiphone.png" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
