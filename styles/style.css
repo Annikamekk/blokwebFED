@@ -1,12 +1,45 @@
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/AbsolutHeadlineWeb2021-Condensed.eb843722c6f4a6377e249178d9f35f1e.woff2') format('woff2'); 
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/absolut-regular.woff2') format('woff2'); 
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/AbsolutSans2021-Bold.465d409442b71ecdfbe795eebb5f35bf.woff2') format('woff2'); 
+}
+
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/AbsolutSans2021-Medium.c782d65efc287b6ece576d0e373e979a.woff2') format('woff2'); 
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/absolut-icons.7bbe7e98cf049b7b84a9a9ff9a25451d.woff2') format('woff2'); 	
+}
+
+@font-face {
+	font-family: 'AbsolutHandWritten';
+	src: url('../fonts/AbsolutHandwrittenHeadline2021-Regular.01f05d40c66bf9acb545b4fc5847b555.woff2') format('woff2'); 
+	font-weight: light;
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
-
-
-
 
 
 
@@ -15,17 +48,176 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#0000BD;
 	--color-background:#eee;
+	--Text-color: white;
+	--Shadow-color: rgb(81, 78, 78);
+	--Nav-color: black;
 }
 
 
 
+ 
+header{
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	background-color: var(--color-text);
+	height: 3em;
+	width: 100%;
+}
+
+header button{
+	position: relative;
+	order:-1;
+	justify-self: start;
+
+	aspect-ratio:1/1;
+
+	display:grid;
+	place-items:center;
+
+	border:none;
+	background-color:transparent;
+}
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+header button span {
+	position: absolute;
+	width:1.5em;
+	height:.15em;
+	background-color: white;
 
-/* jouw code */
+	transition: .3s;
+}
+
+header button span:nth-of-type(1) {
+	transform: translateY(-.3em);
+}
+
+header button span:nth-of-type(2) {
+	transform: translateY(.3em);
+}
+
+header button.open span:nth-of-type(1) {
+	transform: translateY(0) rotate(45deg);
+}
+
+header button.open span:nth-of-type(2) {
+	transform: translateY(0) rotate(-45deg);
+}
+
+nav {
+	padding:1em;
+	display:grid;
+	align-content:start;
+	gap:1em;
+	background: var(--color-background);
+	background-size: 50% auto;
+	position:fixed;
+	inset:0;
+	translate: -100% 5%;
+	transition:.3s;
+  }
+
+nav ul { 
+	margin:0; 
+	padding:0em;
+	list-style:none;
+  }
+  
+nav li a{
+	text-decoration: none;
+	font-family: Absolut, Arial;
+	color:var(--Nav-Text-color);
+	font-size: 1em;
+	padding: 2em;
+	line-height: 1.4;
+}
+nav li a:visited{
+	text-decoration: none;
+	font-family: Absolut, Arial;
+	font-size: 1em;
+	color:var(--Nav-color);
+	padding: 2em;
+	line-height: 1.4;
+}
+nav.open {
+	translate:0 5%;
+
+  }
+
+h1{
+	font-family: Absolut,Impact;
+	font-size: 2.5em;
+	/* text-align: center; */
+	color:var(--Text-color);
+	font-weight: bold;
+}
+
+section:nth-of-type(1){
+	background-image: url("../images/BornToRemixWithCardboard.png");
+	width: 100%;
+	/* height:10em; */
+	display:grid;
+  	grid-auto-columns:min-content;  
+  	place-content: center;
+	grid-template-rows:min-content 4em 2em min-content ;
+	grid-template-columns: 19.4em  ;
+  	text-align:center;
+	font-family: Absolut,Impact;
+	text-transform: uppercase;
+	color:var(--color-text);
+	place-items: center center;
+}
+
+section:nth-of-type(1) h1{
+	margin-top: .6em;
+	font-family: Absolut,Impact;
+	font-size: 4.6em ;
+	color:var(--color-text);
+	line-height: 80%;
+	text-align: center;
+}
+
+section:nth-of-type(1) h1::first-line{
+	font-family: AbsolutHandWritten,Impact;
+}
+section:nth-of-type(1) h2 span{
+	font-family: AbsolutHandWritten,Impact;
+}
+
+section:nth-of-type(1) img{
+	width: 7em;
+
+}
+
+section:nth-of-type(1) h2{
+	margin: 1em 2.9em;
+	font-size: 1.4em;
+	/* margin-top: 0.3em; */
+	line-height: 80%;
+}
+
+section:nth-of-type(1) button{
+	font-size: .6em;
+	padding: .4em 0;
+	margin: -2em;
+	width:28%;
+	color:var(--Text-color);
+	box-shadow: .1em .1em .3em var(--Shadow-color);
+	background-color:transparent;
+	border:none;
+	font-family: Absolut,Impact;
+	text-transform: uppercase;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
 

@@ -49,8 +49,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
 </details>
 
-#2B418F,#CED8FB,#D9E1FF,#E3E9FD,#F3F6FF,#2B418F,#CED8FB,#D9E1FF
-
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -104,8 +102,17 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik kreeg te horen dat ik de plaatjes opnieuw moet maken met tekst en button etc, dus ben nog gebleven bij het eerste stuk. 
+  <!-- hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code) -->
+ Ik heb vooral gewerkt om het eerste plaatje in orde te krijgen en de navigatie(hamburger menu) goed te doen. maar dat gaat redelijk. Met de hamburger menu kreeg ik eerst wel een kruisje, maar moest toen nog de navigatie toe voegen en toen ging het mis. Het lukt me niet om nav maar een deel van het scherm te krijgen en dat het kruisje te voorschijn komt. Daarnaast heb ik nu dat hij 5% is gezakt anders kan ie ook niet meer dichtklappen. Ook heb ik moeite met de spacing tussen de li elementen, maar daar ga ik pas later echt opzoek. 
+
+ Wat betreft het plaatje. Het lukt me niet om 1 woord te veranderen in de zin, want internet zegt dat het niet kan en zelf weet ik het ook niet. Ik heb nu spans gebruikt, maar vraag het wel een keer in de les of er een andere manier is. Ook weet ik niet hoe ik het ene plaatje aan de rechter kant krijg naar de button en de h2. De tekst is me wel gelukt en de button ook- het blijft niet perfect, maar ik heb geen idee wat zij hebben gedaan. 
+
+ <img src="readme-images/Plaatjenietcorrect.png" width="375px" alt="de fles moet rechts">
+ <img src="readme-images/NavGaatFout.png" width="375px" alt="nav werkt nog niet">
+ <img src="readme-images/Javacode.jpg" width="375px" alt="javacode over nav">
+<img src="readme-images/CssCode.jpg" width="375px" alt="css code over de nav">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
