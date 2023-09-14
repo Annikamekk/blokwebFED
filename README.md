@@ -109,6 +109,8 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
 
  Wat betreft het plaatje. Het lukt me niet om 1 woord te veranderen in de zin, want internet zegt dat het niet kan en zelf weet ik het ook niet. Ik heb nu spans gebruikt, maar vraag het wel een keer in de les of er een andere manier is. Ook weet ik niet hoe ik het ene plaatje aan de rechter kant krijg naar de button en de h2. De tekst is me wel gelukt en de button ook- het blijft niet perfect, maar ik heb geen idee wat zij hebben gedaan. 
 
+ -----Na de de meeting van het groepje dat we de vragen gingen opstellen, kreeg ik al het antwoord voor mijn vraag over 1 woord veranderen in de zin. Dus ik heb een probleem minder en kan weer verder.
+
  <img src="readme-images/Plaatjenietcorrect.png" width="375px" alt="de fles moet rechts">
  <img src="readme-images/NavGaatFout.png" width="375px" alt="nav werkt nog niet">
  <img src="readme-images/Javacode.jpg" width="375px" alt="javacode over nav">
@@ -117,11 +119,26 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Karlijn  :
+   Wanneer afbeelding in html en wanneer is CSS?
+   Hoe plaats ik een foto op de goede plek in verband met grid?
+  
+  
+  | Joost:
+    mag een <h2> in een <a>?
+    wanneer svg en wanneer een button?
+    Mag een <ul> in een <ul>?
+    wat zijn handige volgordes van  <img> <p> <h2> enz.?
+   
+  |Annika:
+    Hoe werkt de nav samen met de button in het hamburger menu?
+    Hoe plaats ik een foto op de goede plek in verband met grid?
+  
+
+  | Tygo:
+    hoe zorg ik ervoor dat ( checkbox ) filters zich daadwerkelijk toepassen op de artikelen die de website mij zal tonen?
+
+  
 
 
   ### Verslag van meeting

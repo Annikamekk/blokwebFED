@@ -30,6 +30,7 @@
 	font-family: 'AbsolutHandWritten';
 	src: url('../fonts/AbsolutHandwrittenHeadline2021-Regular.01f05d40c66bf9acb545b4fc5847b555.woff2') format('woff2'); 
 	font-weight: light;
+	font-style: normal;
 }
 
 /**************/
@@ -162,37 +163,37 @@ section:nth-of-type(1){
   	grid-auto-columns:min-content;  
   	place-content: center;
 	grid-template-rows:min-content 4em 2em min-content ;
-	grid-template-columns: 19.4em  ;
+	grid-template-columns: 18.9em  ;
   	text-align:center;
 	font-family: Absolut,Impact;
 	text-transform: uppercase;
 	color:var(--color-text);
-	place-items: center center;
+	
 }
 
 section:nth-of-type(1) h1{
-	margin-top: .6em;
+	margin-top: .3em;
 	font-family: Absolut,Impact;
-	font-size: 4.6em ;
+	font-size: 4.5em ;
 	color:var(--color-text);
 	line-height: 80%;
 	text-align: center;
 }
 
-section:nth-of-type(1) h1::first-line{
+section:nth-of-type(1) h1 em{
 	font-family: AbsolutHandWritten,Impact;
 }
-section:nth-of-type(1) h2 span{
+section:nth-of-type(1) h2 em{
 	font-family: AbsolutHandWritten,Impact;
 }
 
 section:nth-of-type(1) img{
 	width: 7em;
-
+	float: right;
 }
 
 section:nth-of-type(1) h2{
-	margin: 1em 2.9em;
+	margin: .7em 2.9em;
 	font-size: 1.4em;
 	/* margin-top: 0.3em; */
 	line-height: 80%;
@@ -201,7 +202,7 @@ section:nth-of-type(1) h2{
 section:nth-of-type(1) button{
 	font-size: .6em;
 	padding: .4em 0;
-	margin: -2em;
+	margin: auto;
 	width:28%;
 	color:var(--Text-color);
 	box-shadow: .1em .1em .3em var(--Shadow-color);
@@ -209,6 +210,7 @@ section:nth-of-type(1) button{
 	border:none;
 	font-family: Absolut,Impact;
 	text-transform: uppercase;
+	
 }
 
 .visually-hidden {
