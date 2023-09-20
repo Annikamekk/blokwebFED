@@ -5,24 +5,28 @@
 }
 
 @font-face {
-	font-family: 'Absolut';
+	font-family: 'Absolutnormal';
 	src: url('../fonts/absolut-regular.woff2') format('woff2'); 
 	font-weight: normal;
 }
-
 @font-face {
-	font-family: 'Absolut';
+	font-family: 'Absolutregular';
+	src: url('../fonts/AbsolutSans2021-Regular.1625dd223be6277f642087ed274a92b7.woff2') format('woff2'); 
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Absolutbold';
 	src: url('../fonts/AbsolutSans2021-Bold.465d409442b71ecdfbe795eebb5f35bf.woff2') format('woff2'); 
 }
 
 @font-face {
-	font-family: 'Absolut';
+	font-family: 'Absolutmedium';
 	src: url('../fonts/AbsolutSans2021-Medium.c782d65efc287b6ece576d0e373e979a.woff2') format('woff2'); 
 	font-weight: medium;
 }
 
 @font-face {
-	font-family: 'Absolut';
+	font-family: 'Absoluticons';
 	src: url('../fonts/absolut-icons.7bbe7e98cf049b7b84a9a9ff9a25451d.woff2') format('woff2'); 	
 }
 
@@ -42,7 +46,7 @@
   padding: 0;
 }
 
-
+/* 320 px beginnen */
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -60,18 +64,21 @@
 
  
 header{
+	z-index: 200;
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;
+	position: relative;
 	background-color: var(--color-text);
 	height: 3em;
 	width: 100%;
 }
 
 header button{
+	z-index: 300;
 	position: relative;
 	order:-1;
 	justify-self: start;
-
+	
 	aspect-ratio:1/1;
 
 	display:grid;
@@ -101,10 +108,12 @@ header button span:nth-of-type(2) {
 
 header button.open span:nth-of-type(1) {
 	transform: translateY(0) rotate(45deg);
+	background-color:black;
 }
 
 header button.open span:nth-of-type(2) {
 	transform: translateY(0) rotate(-45deg);
+	background-color:black;
 }
 
 nav {
@@ -116,7 +125,7 @@ nav {
 	background-size: 50% auto;
 	position:fixed;
 	inset:0;
-	translate: -100% 5%;
+	translate: -100% 0;
 	transition:.3s;
   }
 
@@ -143,8 +152,8 @@ nav li a:visited{
 	line-height: 1.4;
 }
 nav.open {
-	translate:0 5%;
 
+	translate:0 0;
   }
 
 h1{
@@ -155,63 +164,6 @@ h1{
 	font-weight: bold;
 }
 
-section:nth-of-type(1){
-	background-image: url("../images/BornToRemixWithCardboard.png");
-	width: 100%;
-	/* height:10em; */
-	display:grid;
-  	grid-auto-columns:min-content;  
-  	place-content: center;
-	grid-template-rows:min-content 4em 2em min-content ;
-	grid-template-columns: 18.9em  ;
-  	text-align:center;
-	font-family: Absolut,Impact;
-	text-transform: uppercase;
-	color:var(--color-text);
-	
-}
-
-section:nth-of-type(1) h1{
-	margin-top: .3em;
-	font-family: Absolut,Impact;
-	font-size: 4.5em ;
-	color:var(--color-text);
-	line-height: 80%;
-	text-align: center;
-}
-
-section:nth-of-type(1) h1 em{
-	font-family: AbsolutHandWritten,Impact;
-}
-section:nth-of-type(1) h2 em{
-	font-family: AbsolutHandWritten,Impact;
-}
-
-section:nth-of-type(1) img{
-	width: 7em;
-	float: right;
-}
-
-section:nth-of-type(1) h2{
-	margin: .7em 2.9em;
-	font-size: 1.4em;
-	/* margin-top: 0.3em; */
-	line-height: 80%;
-}
-
-section:nth-of-type(1) button{
-	font-size: .6em;
-	padding: .4em 0;
-	margin: auto;
-	width:28%;
-	color:var(--Text-color);
-	box-shadow: .1em .1em .3em var(--Shadow-color);
-	background-color:transparent;
-	border:none;
-	font-family: Absolut,Impact;
-	text-transform: uppercase;
-	
-}
 
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -223,3 +175,17 @@ section:nth-of-type(1) button{
 	width: 1px;
   }
 
+  Footer h6{
+	background-color: var(--color-text);
+	color: var(--Text-color);
+	font-family: Absolutregular, impact;
+	padding: 1.3em 0;
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.4em;
+  }
+
+
+  /* a::after{
+	content: "→";
+  } */

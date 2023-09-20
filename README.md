@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -157,12 +157,25 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik loop altijd wel bij een section vast, zoals bij de eerste section de tekst en het plaatje niet goed op de plaats kunnen zetten, en bij de tweede ging het eig wel goed, maar wist ik niet of er nog een button bij moest en of ik het zo mocht doen(plus is dat hele plaatje random verdwenen op de normale site...)
+  de derde section was ik op eens 2 van de 6 items kwijt en moest ik goed spelen hoe groot de rows,en columns waren plus nog kijken of het werkte met de h2 erboven. 
+  in de 4de section had ik ook problemen met de tekst omdat de element strong dan niet meer stelde en zag ie de span niet. 
 
+  Maar in de les had ik alles gebraagd en ben ik verder gekomen, en was het vooral een beetje kopieren en plakken en dan daarvan uit alles aan passen omdat het wel beetje op elkaar lijkt. 
+  bij de 5de section zijn de plaatjes niet allemaal even groot dus daar had ik ook moeite mee, maar heb ze nu gewoon de zelfde height gegeven(net zoals bij de 3de section met de caption)
+
+  NU mijn grootste problemen zijn: dat ik bij de 4e section, mijn plaatje niet goed krijg. Ik weet niet hoe ik hem op 100% kan krijgen, ik krijg nu een klein gedeelte te zien. 
+
+
+  Dan kom ik bij een nieuwe gedeelte waarbij je verschillende groepen hebt in een geheel. Daar heb ik ook moeite mee.
+
+  <img src="readme-images/Nieuwmenu.png" width="375px" alt="een ander gedeelte van mijn website">
+  <img src="readme-images/Plaatjefout.png"  width="375px" alt="Plaatje laat maar een gedeelte zien">
 
   ### Agenda voor meeting
   samen met je groepje opstellen

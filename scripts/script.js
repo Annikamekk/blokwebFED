@@ -3,21 +3,21 @@ console.log("hi");
 
 
 var menuButton = document.querySelector("header > button");
+var hetMenu = document.querySelector("nav");
 
 menuButton.onclick = toggleMenu;
 
 function toggleMenu() {
     menuButton.classList.toggle("open");
+    hetMenu.classList.toggle("open");
 }
 
-// // var hetMenu = document.querySelector("nav");
-
-// // menuButton.onclick = toggle;
+// menuButton.onclick = toggle;
 
 
-// // function toggle(){
-// //   hetMenu.classList.toggle("open");
-// // }
+// function toggle(){
+ 
+// }
 
 // var sluitButton = document.querySelector("nav button");
 

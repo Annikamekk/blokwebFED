@@ -1,0 +1,405 @@
+@font-face {
+	font-family: 'Absolut';
+	src: url('../fonts/AbsolutHeadlineWeb2021-Condensed.eb843722c6f4a6377e249178d9f35f1e.woff2') format('woff2'); 
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Absolutnormal';
+	src: url('../fonts/absolut-regular.woff2') format('woff2'); 
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Absolutregular';
+	src: url('../fonts/AbsolutSans2021-Regular.1625dd223be6277f642087ed274a92b7.woff2') format('woff2'); 
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Absolutbold';
+	src: url('../fonts/AbsolutSans2021-Bold.465d409442b71ecdfbe795eebb5f35bf.woff2') format('woff2'); 
+}
+
+@font-face {
+	font-family: 'Absolutmedium';
+	src: url('../fonts/AbsolutSans2021-Medium.c782d65efc287b6ece576d0e373e979a.woff2') format('woff2'); 
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: 'Absoluticons';
+	src: url('../fonts/absolut-icons.7bbe7e98cf049b7b84a9a9ff9a25451d.woff2') format('woff2'); 	
+}
+
+@font-face {
+	font-family: 'AbsolutHandWritten';
+	src: url('../fonts/AbsolutHandwrittenHeadline2021-Regular.01f05d40c66bf9acb545b4fc5847b555.woff2') format('woff2'); 
+	font-weight: light;
+	font-style: normal;
+}
+
+:root {
+	/* startje */
+	--color-text:#0000BD;
+	--color-background:#eee;
+	--Text-color: white;
+	--Shadow-color: rgb(65, 63, 63);
+	--black: black;
+	--yellow:#FFFF00;
+
+
+}
+
+
+
+main > section:nth-of-type(1){
+	
+	background-image: url("../images/BornToRemixWithCardboard.png");
+	width: 100%;
+	display:grid;
+  	grid-auto-columns:25em;  
+  	place-content: center;
+	grid-template-rows:min-content 4em 14em ;
+
+  	text-align:center;
+	font-family: Absolut,arial,sans-serif;
+	text-transform: uppercase;
+	color:var(--color-text);
+	
+}
+
+main > section:nth-of-type(1) h1{
+	z-index: 100;
+	grid-row-start: 1;
+	grid-column-start: 1;
+	margin-top: .3em;
+	font-family: Absolut,arial,sans-serif;
+	font-size: 4.5em ;
+	color:var(--color-text);
+	line-height: 80%;
+	text-align: center;
+
+	display: grid;
+}
+
+main > section:nth-of-type(1) h1 em{
+	font-family: AbsolutHandWritten,arial,sans-serif;
+}
+main > section:nth-of-type(1) h2 em{
+	font-family: AbsolutHandWritten,arial,sans-serif;
+}
+
+
+
+main > section:nth-of-type(1) h2{
+	
+	z-index: 100;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	margin: .7em 2.9em;
+	font-size: 1.4em;
+	line-height: 80%;
+	display: grid;
+}
+
+main > section:nth-of-type(1) button{
+	align-self: start;
+	justify-self: center;
+	grid-column-start: 1;
+	grid-row-start: 3;
+	font-size: .6em;
+	padding: .4em 0;
+	/* margin: auto; */
+	width:28%;
+	color:var(--Text-color);
+	box-shadow: .1em .1em .3em var(--Shadow-color);
+	background-color:transparent;
+	border:none;
+	font-family: Absolut,arial,sans-serif;
+	text-transform: uppercase;
+	
+}
+
+main > section:nth-of-type(1) img{
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	justify-self:end ;
+	align-self: end;
+	width: 6em;
+	margin-right:3em;
+}
+
+section:nth-of-type(2){
+	position: relative;
+	display:grid;
+  	text-align:center;
+	z-index: 100;
+	grid-row-start: 1;
+	grid-column-start: 1;
+	font-family: Absolut,arial,sans-serif;
+	/* font-size: 4.5em ; */
+	color:var(--Text-color);
+}
+
+section:nth-of-type(2) img{
+
+	width: 100%;
+}
+
+
+section:nth-of-type(2) p{
+	position: absolute;
+	left:1em;
+	right:1em;
+	bottom:7em;
+	font-size: .7em;
+	font-family: Absolutnormal,arial,sans-serif;
+}
+
+section:nth-of-type(2) h2{
+	/* display: grid; */
+	position: absolute;
+	left:.5em;
+	right:.5em;
+	bottom: .4em;
+	font-family: Absolut,arial,sans-serif;
+	font-size: 2.5em;
+	line-height: 80%;
+	text-transform: uppercase;
+   }
+
+   section:nth-of-type(2) h2::first-line{
+	font-family: Absolut,arial,sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+   }
+
+   section:nth-of-type(3){
+    display: grid;
+    place-content: none;
+   }
+
+   
+   section:nth-of-type(3) > h2{
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+    font-family: AbsolutHandwritten,arial,sans-serif;
+    font-size: 2.5em;
+    color: var(--Shadow-color);
+    line-height: 80%;
+    transform: rotate(-10deg);
+    
+   }
+
+
+   section:nth-of-type(3) strong{
+    font-family: Absolut, arial,sans-serif;
+   }
+
+   section:nth-of-type(3) > section{
+     background-image: none;
+     overflow-x:auto;
+	 padding: 0 4em;
+   }
+
+   section:nth-of-type(3) > section ul{
+    display:flex;
+    padding: 5em 0 1em 0;
+    gap:2em;
+	
+    
+   }
+
+   section:nth-of-type(3) > section ul li{
+    display:grid;
+    flex-direction:column-reverse;
+	grid-template-columns: 10em;
+
+   }
+
+   section:nth-of-type(3) > section ul h3{
+	grid-row-start: 2;
+	height: 5em;
+    color: var(--Nav-color);
+    font-family: Absolutbold,arial,sans-serif;
+	justify-self: center;
+	align-self: center;
+    font-size: .9em;
+    padding: 1em;
+   }
+   
+   section:nth-of-type(3) > section ul img{
+	grid-row-start: 1;
+	justify-self: center;
+	align-self: center;
+    width: 5em;
+   }
+
+   section:nth-of-type(4){
+	background-image: url("../images/Explore_our_one_source.JPG");
+	width: 100%;
+	display:grid;
+  	grid-auto-columns:20em;  
+  	place-content: center;
+	grid-template-rows:min-content 4em 14em ;
+  	text-align:center;
+	font-family: Absolut,arial,sans-serif;
+	text-transform: uppercase;
+	
+   }
+
+   section:nth-of-type(4) h2{
+	/* z-index: 100; */
+	grid-row-start: 1;
+	grid-column-start: 1;
+	margin-top: .3em;
+	font-family: Absolut,arial,sans-serif;
+	font-size: 2.5rem ;
+	color:var(--yellow);
+	line-height: 80%;
+	text-align: center;
+
+	display: grid;
+   }
+   section:nth-of-type(4) h2 strong{
+	font-family: AbsolutHandWritten,arial,sans-serif;
+   }
+   section:nth-of-type(4) button{
+	align-self: start;
+	justify-self: center;
+	grid-column-start: 1;
+	/* grid-row-start: 3; */
+	font-size: 1em;
+	padding: 1em 0;
+	/* width:28%; */
+	color:var(--Text-color);
+	background-color:transparent;
+	border:none;
+	font-family: Absolutmedium,arial,sans-serif;
+	text-transform: uppercase;
+   }
+
+   section:nth-of-type(4) > button::after{
+	content: "  ▹";
+	
+  }
+
+
+  section:nth-of-type(5){
+    display: grid;
+    place-content: none;
+   }
+
+   
+   section:nth-of-type(5) > h2{
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+    font-family: AbsolutHandwritten,arial,sans-serif;
+    font-size: 2.5em;
+    color: var(--Shadow-color);
+    line-height: 80%;
+    transform: rotate(-10deg);
+    
+   }
+
+
+   section:nth-of-type(5) strong{
+    font-family: Absolut, arial,sans-serif;
+   }
+
+   section:nth-of-type(5) > section{
+     background-image: none;
+     overflow-x:auto;
+	 padding: 4em 0 ;
+   }
+
+   section:nth-of-type(5) > section ul{
+    display:flex;
+   }
+
+   section:nth-of-type(5) > section ul li{
+    display:grid;
+	grid-template-columns: 12em;
+	justify-self: center;
+	align-self: center;
+   }
+
+   section:nth-of-type(5) > section ul h3{
+	grid-row-start: 2;
+	text-align: center;
+    color: var(--Nav-color);
+    font-family: Absolutbold,arial,sans-serif;
+    font-size: 1em;
+    padding: 1em;
+   }
+   
+   section:nth-of-type(5) > section ul img{
+	grid-row-start: 1;
+    width: 5em;
+	height:8.5em;
+	justify-self: center;
+	align-self: center;
+	
+   }
+   section:nth-of-type(5) > section a{
+	text-decoration: none;
+	grid-row-start: 3;
+	justify-self: center;
+	align-self: center;
+	font-size: 1em;
+	font-family: Absolutregular,Arial, sans-serif;
+	color: var(--color-text);
+   }
+
+   section:nth-of-type(5) > section a:visited{
+	color: var(--color-text);
+   }
+
+   section:nth-of-type(5) > section a::after{
+	content: " →";
+  }
+
+  section:nth-of-type(6) {
+	position: relative;
+	display:grid;
+	/* grid-row-start: 1;
+	grid-column-start: 1; */
+	font-family: Absolut,arial,sans-serif;
+	color:var(--Text-color);
+	line-height: 80%;
+	text-align: center;
+  }
+
+  section:nth-of-type(6) h2{
+	/* display: grid; */
+	position: absolute;
+	top:1em;
+	font-family: Absolut,arial,sans-serif;
+	font-size: 2.5em;
+	line-height: 80%;
+	text-transform: uppercase;
+   }
+
+   section:nth-of-type(6) img{
+	width: 100%;
+}
+
+section:nth-of-type(6) button{
+	position: absolute;
+	align-self: start;
+	justify-self: center;
+	top: 11em;
+	font-size: .8em;
+	padding: 1em 0;
+	color:var(--Text-color);
+	background-color:transparent;
+	border:none;
+	font-family: Absolutmedium,arial,sans-serif;
+	text-transform: uppercase;
+}
+
+section:nth-of-type(6) > button::after{
+	content: " →";
+  }
