@@ -183,6 +183,9 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
  annika: 
  hoe kan ik mijn details/summary stijlen dat het plusje aan de andere kant staat?  hoe krijg ik mijn img geheel te zien? en mag ik los een img er in zetten?
 
+joost: geen vragen
+karlijn: geen vragen
+tygo:
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
