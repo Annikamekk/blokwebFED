@@ -171,8 +171,8 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
 
   NU mijn grootste problemen zijn: dat ik bij de 4e section, mijn plaatje niet goed krijg. Ik weet niet hoe ik hem op 100% kan krijgen, ik krijg nu een klein gedeelte te zien. 
 
-
-  Dan kom ik bij een nieuwe gedeelte waarbij je verschillende groepen hebt in een geheel. Daar heb ik ook moeite mee.
+  Ik heb eigenlijk daarna geen problemen meer gekregen, en ben ik bijna klaar met alle concent. De footer vind ik wel nog steeds lastig hoe ik die moet maken en de navigatie ook.
+  maar naast het plaatje heb ik geen problemen.
 
   <img src="readme-images/Nieuwmenu.png" width="375px" alt="een ander gedeelte van mijn website">
   <img src="readme-images/Plaatjefout.png"  width="375px" alt="Plaatje laat maar een gedeelte zien">
