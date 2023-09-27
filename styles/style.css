@@ -37,6 +37,36 @@
 	font-style: normal;
 }
 
+
+:root {
+	/* startje */
+	--background:white;
+	--blue:#0000BD;
+	--white: white;
+	--Shadow-color: rgb(81, 78, 78);
+	--black: black;
+	--footer:rgb(236, 233, 233);
+	--line:lightgrey;
+	--focus:rgb(234, 232, 232);
+	--yellow:#FFFF00;
+	--beigepink:#E8D8D0;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* startje */
+		--background:#0000BD;
+		--blue:white;
+		--white: rgb(55, 55, 55);
+		--Shadow-color: rgb(81, 78, 78);
+		--black: rgb(255, 255, 255);
+		--footer:rgb(133, 132, 132);
+		--line:rgb(255, 255, 255);
+		--focus:rgb(252, 244, 244);
+		--beigepink:rgb(161, 83, 96);
+	
+	}
+}
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -51,22 +81,17 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--blue:#0000BD;
-	--white: white;
-	--Shadow-color: rgb(81, 78, 78);
-	--black: black;
-	--footer:rgb(236, 233, 233);
-	--line:lightgrey;
+
+body{
+	border-color: var(--background);
 }
 
 header{
 	z-index: 200;
 	display: grid;
-	display: fixed;
 	grid-template-columns: 1fr max-content 1fr;
-	position: relative;
+	position: sticky;
+	top:0;
 	background-color: var(--blue);
 	height: 3em;
 	width: 100%;
@@ -93,7 +118,6 @@ header button span {
 	width:1.5em;
 	height:.15em;
 	background-color: var(--white);
-
 	transition: .3s;
 }
 
@@ -134,18 +158,30 @@ nav ul {
   }
   
 nav li{
+	z-index: 300;
 	padding: .7em 0;
 	border-bottom: .1em var(--line) solid;
   }
 
 nav li a{
+	/* padding: .7em 0; */
 	text-decoration: none;
 	font-family: Absolutbold, Arial;
 	color:var(--black);
-	font-size: 1em;
+	font-size: 1.3em;
 	line-height: 1.4;
 
+	
 }
+
+nav li a:focus{
+	padding-left: 1em;
+	left:1em;
+	right:1em;
+	background-color: var(--focus);
+	width: 80%;
+}
+
 nav li a:visited{
 	text-decoration: none;
 	font-family: Absolut, Arial;
@@ -165,7 +201,9 @@ header > h1{
 	/* text-align: center; */
 	color:var(--white);
 }
-
+header a{
+	text-decoration: none;
+}
 header a:visited{
 	text-decoration-line: none;
 	color:var(--white);
@@ -182,18 +220,34 @@ header a:visited{
   }
 
   footer{
+	margin-top: 0;
 	background-color: var(--footer);
   }
 
   footer details{
+	font-size: 1.1em;
 	font-family: Absolutbold, Arial,sans-serif;
-	padding: 1em 2em 0 2em;
+	padding: 0 0 0 1em;
 	border-bottom: .1em solid var(--line);
   }
 
+  footer details:first-of-type{
+	padding-top: 2em;
+  }
+ footer h5{
+	display: grid;
+	grid-template-columns: 15em;
+	grid-template-rows: 8em;
+	align-items: end;
+	font-family: Absolutnormal, Arial, sans-serif;
+	color: var(--Shadow-color);
+	font-size: .95em;
+	padding-left:1em ;
+	padding-bottom: 1.5em;
+ }
   Footer h6{
-	background-color: var(--color-text);
-	color: var(--Text-color);
+	background-color: var(--blue);
+	color: var(--white);
 	font-family: Absolutregular, impact;
 	padding: 1.3em 0;
 	text-align: center;
@@ -207,33 +261,98 @@ header a:visited{
   }
 
   details > summary {
-	list-style-type: "+";
-	padding-bottom: 1em;
+	display:flex;
+	justify-content:space-between;
+	list-style-type: none;
+	padding: 1em 1em 1em 0 ;
 	transition: 1s;
+}
+
+details > summary:focus{
+	padding-left: 1em;
+	background-color: var(--focus);
+}
+
+details > summary::before {
+	content:"+";
+	order:2;
 }
 
   details[open] > summary {
-	list-style-type: "-";
+	list-style-type: none;
 	transition: 1s;
 }
+details[open] > summary::before {
+	content:"-";
+	order:2;
+	transition: .3s;
+}
 
 
-footer > details ul{
-	text-decoration: none;
+footer > details ul {
 	list-style-type: none;
 }
-	
-footer > details li{
+footer > details ul a {
+	text-decoration: none;
+}
+
+footer > details li a p{
+	color: var(--black);
 	font-family: Absolutregular, Arial,sans-serif;
 	padding: 1em 2em;
 	border-bottom: .1em solid var(--line);
 }
 
+footer > details li a:visited{
+	text-decoration: none;
+}
+footer > details li:focus{
+	padding-left: 1em;
+	background-color: var(--focus);
+}
 
-  /* footer details summary { 
-	cursor: pointer;
-  }
-  
-  footer details summary > * {
-	display: inline;
-  } */
+footer > ul{
+	text-decoration: none;
+	list-style-type: none;
+	padding: 1em 2em;
+	display:flex;
+	justify-content:space-between;
+	border-bottom: .1em solid var(--line);
+}
+
+footer ul a img{
+	width:1.7em;
+}
+
+footer ul a:visited{
+	width:1.7em;
+}
+
+footer section {
+	padding: 1em 1em;
+	display:flex;
+	justify-content: space-between;
+
+	align-items: center;
+	font-family: Absolutregular,Arial, sans-serif ;
+	border-bottom: .1em solid var(--line);
+}
+
+footer section img:nth-of-type(1){
+	order:-1;
+	width: 1.5em;
+	height: 1.5em;
+}
+footer section img:nth-of-type(2){
+	rotate: 180deg;
+
+	width: 1em;
+	height: 1em;
+}
+
+footer section h4{
+	align-items: center;
+	justify-items: center;
+	left:0;
+
+}
