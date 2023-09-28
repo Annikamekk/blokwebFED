@@ -196,11 +196,9 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+   kreeg goede feedback bij het voortgang gesprek, want mocht geen section gebruiken zonder h er bij, dus ie moest ik verwijderen of veranderen naar een div. 
 
+   en over de background img goed gepositioneerd. 
 </details>
 
 
@@ -214,6 +212,14 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+
+    eigenlijk ben ik dus al grootendeels klaar met de content schrijven, maar moetn u nog animaties er in stoppen. Ik heb wel al kleine animaties toegevoegd maar dat is nog niet genoeg. 
+
+    daarna heb ik dark mode en reduce motion toegevoegd dus ik moet nu nog 3 andere toevoegen tot het voldoende is. 
+
+    heb ook op woensdag veel focus states en hover states toegevoegd. 
+
 
 </details>
 

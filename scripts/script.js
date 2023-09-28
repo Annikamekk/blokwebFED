@@ -12,17 +12,10 @@ function toggleMenu() {
     hetMenu.classList.toggle("open");
 }
 
-// menuButton.onclick = toggle;
 
+// var myImage = document.querySelector("#image");
 
-// function toggle(){
- 
+// function changeMyImage(){
+//     myImage.src ="../images/SavePicture.webp";
 // }
 
-// var sluitButton = document.querySelector("nav button");
-
-// sluitButton.onclick = closeMenu;
-
-// function closeMenu(){
-//   hetMenu.classList.remove("open");
-// }

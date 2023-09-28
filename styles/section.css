@@ -121,6 +121,8 @@ main > section:nth-of-type(1) a:hover{
 
 main > section:nth-of-type(1) a:focus{
 	scale:1.2;
+	color: var(--blue);
+	background-color: var(--white);  
 }
 main > section:nth-of-type(1) img{
 	z-index:100;
@@ -141,6 +143,7 @@ main > section:nth-of-type(1) img:hover{
 	transition: .6s;
 
 }
+
 main > section:nth-of-type(2){
 	position: relative;
 	display:grid;
@@ -249,17 +252,19 @@ main > section:nth-of-type(2) h2{
 
    }
 
+	section:nth-of-type(3) > ul li a:visited{
+	color:var(--black);
+   }
+
    section:nth-of-type(3) > ul li a:hover{
 	scale: 1.15;
 	translate: 0 -.7em;
 	transition: .3s;
    }
-   section:nth-of-type(3) > ul li a:visited{
-	color:var(--black);
-
-   }
-
+   
    section:nth-of-type(3) > ul li a:focus{
+	scale: 1;
+	translate: 0 -.7em;
 	background-color: var(--footer);
    }
 
@@ -349,9 +354,18 @@ main > section:nth-of-type(2) h2{
    }
 
    main >  section:nth-of-type(4) button:hover{
-	scale: 1.2;
+	scale: 1.1;
 	transition: .3s;
 	color: var(--yellow);
+	border-radius: .5em;
+   }
+
+   main >  section:nth-of-type(4) button:focus{
+	transition: .3s;
+	color: var(--black);
+	background-color: var(--white);
+	border-radius: .5em;
+	padding: .3em;
    }
 
    main > section:nth-of-type(4) button::after{
@@ -461,6 +475,12 @@ main > section:nth-of-type(2) h2{
    section:nth-of-type(5) > ul a::after{
 	content: " →";
   }
+
+  	section:nth-of-type(5) > ul a:focus{
+	scale: 1.1;
+	translate: 0 -.7em;
+	background-color: var(--footer);
+   }
 
   section:nth-of-type(6) {
 	position: relative;
@@ -574,6 +594,9 @@ div > section a{
 	font-family: Absolutregular,Arial, sans-serif;
 	color: var(--blue);
 	padding-bottom: 2em;
+}
+div > section a:focus{
+	text-decoration: underline;
 }
 
 div > section a::after{

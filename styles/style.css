@@ -328,7 +328,7 @@ footer ul a:visited{
 	width:1.7em;
 }
 
-footer section {
+footer > section {
 	padding: 1em 1em;
 	display:flex;
 	justify-content: space-between;
@@ -338,12 +338,12 @@ footer section {
 	border-bottom: .1em solid var(--line);
 }
 
-footer section img:nth-of-type(1){
+footer > section img:nth-of-type(1){
 	order:-1;
 	width: 1.5em;
 	height: 1.5em;
 }
-footer section img:nth-of-type(2){
+footer > section img:nth-of-type(2){
 	rotate: 180deg;
 
 	width: 1em;
