@@ -157,7 +157,7 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -229,7 +229,7 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -239,13 +239,25 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  tygo:
+  Hoe maak ik een filter menu die functioneerd als overlay?
+
+Hoe zorg ik dat het sorteren op bmw serie net zo werkt als op de voorbeeld site (met animatie, donkere achtergrond etc)?
+
+Is het noodzakelijk voor mij om het informatie tabje uit te werken bij de modellen? Ook met volledige overlay?
+
+Hoe maak ik een vergelijkbare overlay voor de detail pop up van een auto model?
+
+joost:
+Hoe maak ik mijn nav zo dat hij alleen te zien is als je naar boven scrolt
+
+karlijn:
+hoe ik bepaalde gradient ergens opkrijg
+Hoe maak ik het toegankelijker met leesbaarheid?
 
 
+Annika:
+Hoe kan ik met een button(en toggle) de img veranderen? is een formulier toevoegen ook een goed ding voor de surface plane?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
