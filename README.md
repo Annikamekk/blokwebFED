@@ -303,8 +303,9 @@ laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/almanac/properties/c/cursor/
+  2. https://www.w3schools.com/html/html_forms.asp
+  3. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/
 
 </details>
