@@ -1,18 +1,16 @@
 @font-face {
 	font-family: 'Absolut';
 	src: url('../fonts/AbsolutHeadlineWeb2021-Condensed.eb843722c6f4a6377e249178d9f35f1e.woff2') format('woff2'); 
-	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'Absolutnormal';
 	src: url('../fonts/absolut-regular.woff2') format('woff2'); 
-	font-weight: normal;
 }
 @font-face {
 	font-family: 'Absolutregular';
 	src: url('../fonts/AbsolutSans2021-Regular.1625dd223be6277f642087ed274a92b7.woff2') format('woff2'); 
-	font-weight: normal;
+	
 }
 @font-face {
 	font-family: 'Absolutbold';
@@ -22,7 +20,6 @@
 @font-face {
 	font-family: 'Absolutmedium';
 	src: url('../fonts/AbsolutSans2021-Medium.c782d65efc287b6ece576d0e373e979a.woff2') format('woff2'); 
-	font-weight: medium;
 }
 
 @font-face {
@@ -33,10 +30,7 @@
 @font-face {
 	font-family: 'AbsolutHandWritten';
 	src: url('../fonts/AbsolutHandwrittenHeadline2021-Regular.01f05d40c66bf9acb545b4fc5847b555.woff2') format('woff2'); 
-	font-weight: light;
-	font-style: normal;
 }
-
 
 :root {
 	/* startje */
@@ -50,6 +44,10 @@
 	--focus:rgb(234, 232, 232);
 	--yellow:#FFFF00;
 	--beigepink:#E8D8D0;
+	--pink:palevioletred;
+	--whiteCollab:white;
+	--grey: gray;
+	--button:white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,8 +62,15 @@
 		--line:rgb(255, 255, 255);
 		--focus:rgb(252, 244, 244);
 		--beigepink:rgb(161, 83, 96);
+		--pink:rgb(191, 82, 118);
+		--grey:white;
+		--button:#0000BD;
 	
 	}
+}
+
+html:has( [value="big"]:checked ) {
+	font-size:1.3em; 
 }
 /**************/
 /* CSS REMEDY */
@@ -76,15 +81,17 @@
   padding: 0;
 }
 
-/* 320 px beginnen */
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 body{
-	border-color: var(--background);
+	background-color: var(--background);
 }
+
+
+/* ------------------------header------------------------ */
+
 
 header{
 	z-index: 200;
@@ -92,9 +99,21 @@ header{
 	grid-template-columns: 1fr max-content 1fr;
 	position: sticky;
 	top:0;
+
 	background-color: var(--blue);
+
 	height: 3em;
 	width: 100%;
+}
+
+header > a{
+	position: absolute;
+	left: -999em;
+}
+
+header > a:focus{
+	position: absolute;
+	left: 5em;
 }
 
 header button{
@@ -102,9 +121,7 @@ header button{
 	position: relative;
 	order:-1;
 	justify-self: start;
-	
 	aspect-ratio:1/1;
-
 	display:grid;
 	place-items:center;
 
@@ -144,11 +161,11 @@ nav {
 	display:grid;
 	align-content:start;
 	gap:1em;
-	background: var(--footer);
 	position:fixed;
 	inset:0;
 	translate: -100% 0;
 	transition:.3s;
+	background: var(--footer);
   }
 
 nav ul { 
@@ -164,13 +181,11 @@ nav li{
   }
 
 nav li a{
-	/* padding: .7em 0; */
-	text-decoration: none;
-	font-family: Absolutbold, Arial;
 	color:var(--black);
+	font-family: Absolutbold, Arial;
 	font-size: 1.3em;
 	line-height: 1.4;
-
+	text-decoration: none;
 	
 }
 
@@ -178,27 +193,26 @@ nav li a:focus{
 	padding-left: 1em;
 	left:1em;
 	right:1em;
-	background-color: var(--focus);
 	width: 80%;
+	background-color: var(--focus);
 }
 
 nav li a:visited{
-	text-decoration: none;
 	font-family: Absolut, Arial;
 	font-size: 1em;
 	color:var(--black);
-	padding: 2em;
+	
 	line-height: 1.4;
+	text-decoration: none;
+	padding: 2em;
 }
 nav.open {
-
 	translate:0 0;
   }
 
 header > h1{
 	font-family: Absolut,Impact;
 	font-size: 2.5em;
-	/* text-align: center; */
 	color:var(--white);
 }
 header a{
@@ -208,6 +222,25 @@ header a:visited{
 	text-decoration-line: none;
 	color:var(--white);
 }
+
+nav > section{
+	color: var(--black);
+	font-family: Absolutnormal, Arial, sans-serif;
+	padding-left: 1.5em;
+	
+}
+
+nav> section h2{
+	font-size: 1.3em;
+	font-family: Absolutmedium,Arial, sans-serif;
+	color: var(--black);
+	
+}
+
+nav > section label{
+	font-size: 1em;
+}
+
 
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -219,12 +252,17 @@ header a:visited{
 	width: 1px;
   }
 
+
+/* -------------------------footer------------------------------------ */
+
+
   footer{
 	margin-top: 0;
 	background-color: var(--footer);
   }
 
   footer details{
+	cursor: default;
 	font-size: 1.1em;
 	font-family: Absolutbold, Arial,sans-serif;
 	padding: 0 0 0 1em;
@@ -234,21 +272,24 @@ header a:visited{
   footer details:first-of-type{
 	padding-top: 2em;
   }
+
  footer h5{
 	display: grid;
 	grid-template-columns: 15em;
 	grid-template-rows: 8em;
 	align-items: end;
-	font-family: Absolutnormal, Arial, sans-serif;
-	color: var(--Shadow-color);
-	font-size: .95em;
 	padding-left:1em ;
 	padding-bottom: 1.5em;
+	font-family: Absolutnormal, Arial, sans-serif;
+	font-size: .95em;
+	color: var(--grey);
  }
+
   Footer h6{
-	background-color: var(--blue);
-	color: var(--white);
 	font-family: Absolutregular, impact;
+	color: var(--white);
+	background-color: var(--blue);
+
 	padding: 1.3em 0;
 	text-align: center;
 	font-size: .9em;
@@ -303,21 +344,26 @@ footer > details li a p{
 	border-bottom: .1em solid var(--line);
 }
 
-footer > details li a:visited{
+footer > details ul li a:visited{
 	text-decoration: none;
 }
-footer > details li:focus{
-	padding-left: 1em;
+footer > details li a p:focus{
+	padding-left: 2em;
 	background-color: var(--focus);
 }
 
+footer > details[open] li a p:hover{
+	padding-left: 2em;
+	color: var(--blue);
+}
+
 footer > ul{
-	text-decoration: none;
-	list-style-type: none;
-	padding: 1em 2em;
 	display:flex;
+	padding: 1em 2em;
 	justify-content:space-between;
 	border-bottom: .1em solid var(--line);
+	text-decoration: none;
+	list-style-type: none;
 }
 
 footer ul a img{
@@ -327,32 +373,43 @@ footer ul a img{
 footer ul a:visited{
 	width:1.7em;
 }
+footer ul a:hover{
+	scale: 1.1;
+}
+
+footer ul a:focus{
+	scale: 1.1;
+	background-color: var(--white);
+	border-radius: .5em;
+}
 
 footer > section {
-	padding: 1em 1em;
 	display:flex;
 	justify-content: space-between;
-
 	align-items: center;
+	padding: 1em;
 	font-family: Absolutregular,Arial, sans-serif ;
 	border-bottom: .1em solid var(--line);
 }
 
+footer > section:focus{
+	padding-left: 1em;
+	background-color: var(--focus);
+}
 footer > section img:nth-of-type(1){
 	order:-1;
 	width: 1.5em;
 	height: 1.5em;
 }
 footer > section img:nth-of-type(2){
-	rotate: 180deg;
-
+	transform: rotate(180deg);
 	width: 1em;
 	height: 1em;
 }
 
 footer section h4{
+	cursor: default;
 	align-items: center;
 	justify-items: center;
 	left:0;
-
 }

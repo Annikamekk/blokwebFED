@@ -261,10 +261,7 @@ Hoe kan ik met een button(en toggle) de img veranderen? is een formulier toevoeg
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik heb de img kunnen veranderen met jacascript en een button waar de kleur van de button ook veranderd en daarnaast ook gevraagd hoe ik de fontsize kan veranderen en dat is ook gelukt. 
 
 </details>
 

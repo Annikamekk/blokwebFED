@@ -1,50 +1,4 @@
-@font-face {
-	font-family: 'Absolut';
-	src: url('../fonts/AbsolutHeadlineWeb2021-Condensed.eb843722c6f4a6377e249178d9f35f1e.woff2') format('woff2'); 
-	font-weight: bold;
-}
 
-@font-face {
-	font-family: 'Absolutnormal';
-	src: url('../fonts/absolut-regular.woff2') format('woff2'); 
-	font-weight: normal;
-}
-@font-face {
-	font-family: 'Absolutregular';
-	src: url('../fonts/AbsolutSans2021-Regular.1625dd223be6277f642087ed274a92b7.woff2') format('woff2'); 
-	font-weight: normal;
-}
-@font-face {
-	font-family: 'Absolutbold';
-	src: url('../fonts/AbsolutSans2021-Bold.465d409442b71ecdfbe795eebb5f35bf.woff2') format('woff2'); 
-}
-
-@font-face {
-	font-family: 'Absolutmedium';
-	src: url('../fonts/AbsolutSans2021-Medium.c782d65efc287b6ece576d0e373e979a.woff2') format('woff2'); 
-	font-weight: medium;
-}
-
-@font-face {
-	font-family: 'Absoluticons';
-	src: url('../fonts/absolut-icons.7bbe7e98cf049b7b84a9a9ff9a25451d.woff2') format('woff2'); 	
-}
-
-@font-face {
-	font-family: 'AbsolutHandWritten';
-	src: url('../fonts/AbsolutHandwrittenHeadline2021-Regular.01f05d40c66bf9acb545b4fc5847b555.woff2') format('woff2'); 
-	font-weight: light;
-	font-style: normal;
-}
-
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-  margin: 0;
-  padding: 0;
-}
 
 /* 320 px beginnen */
 
@@ -52,11 +6,43 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 
-main > img:nth-of-type(1){
+main > section:nth-of-type(1){
+	display: flex;
+	position: relative;
+}
+main > section:nth-of-type(1) h2{
+	display: none;
+}
+
+main > section:nth-of-type(1) img{
     width: 100%;
 }
 
-main > section:nth-of-type(1){
+main > section:nth-of-type(1) img.wissel {
+	content: url("../images/PinkNotJustAnIdea.jpeg");
+}
+
+main > section:nth-of-type(1) button{
+	position: absolute;
+	font-family: Absolutbold, arial, sans-serif;
+	font-size: .8em;
+	color: var(--whiteCollab);
+	background-color: var(--pink);
+
+	border: none;
+	border-radius: .2em;
+
+	padding: .8em;
+	bottom: .5em;
+	right: .5em	;
+}
+
+main > section:nth-of-type(1) button.verander{
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+main > section:nth-of-type(2){
     display: grid;
     grid-template-columns: 17em;
     grid-template-rows: 10em;
@@ -65,83 +51,87 @@ main > section:nth-of-type(1){
 	padding-bottom: 2em;
 }
 
-main > section:nth-of-type(1) h1{
-    font-family: Absolut, arial, sans-serif;
+main > section:nth-of-type(2) h2{
+    font-family: Absolut, arial, sans-serif; 
+	font-size: 2.5em;
+	color: var(--blue); 
+	text-align: center;
     line-height: 80%;
+
     justify-self: center;
     align-self: end;
-    color: var(--blue);
-    font-size: 2.5em;
-    text-align: center;
     margin-bottom: .4em;   
 }
 
-main > section:nth-of-type(1) h1 strong{
+main > section:nth-of-type(2) h2 strong{
     font-family: AbsolutHandWritten, arial, sans-serif;
 }
 
-main > section:nth-of-type(1) p{
+main > section:nth-of-type(2) p{
     font-family: Absolutmedium, arial, sans-serif;
-    font-size: 1.2em;
-    line-height: 150%;
-    padding: 0 1em;
-    justify-self: center;
-    align-self: end;
-    color: var(--black);
+    font-size: 1.2em;  
+	color: var(--black);
     text-align: center;
+    line-height: 150%;
+	justify-self: center;
+    align-self: end;
+	padding: 0 1em;
 }
 
 main > div:nth-of-type(1){
 	display: grid;
 	grid-template-columns:17em;
+	grid-template-rows:19em;
   	place-content: center;
 	background-color:var(--beigepink);
-	grid-template-rows:19em;
-	padding-bottom: 2em;
 
+	padding-bottom: 2em;
 }
 
 main > div:nth-of-type(1)> section {
-	grid-row-start: 2;
 	display: grid;
-	place-content: center;
+	grid-row-start: 2;
 	grid-template-columns:17em;
+	grid-template-rows: 11em;
+	place-content: center;
+
 	padding-top: 2em;
 	padding-bottom: 3em;
-	grid-template-rows: 11em;
-	background-color: var(--white);
+
 	line-height: 1.4;
+	background-color: var(--white);
 }
 
 
 main > div:nth-of-type(1)> section h2 {
 	font-family: Absolutbold, Arial, sans-serif;
 	font-size: 1.7em;
+	color: var(--black);
 	text-transform: uppercase;
 	padding: 0 1em;
-	
 }
+
 main > div:nth-of-type(1)> section p {
-	text-align: left;
 	font-family: Absolutregular, Arial, sans-serif;
 	font-size: .9em;
+	color: var(--black);
+	text-align: left;
 	padding: 0 2em 0 1.5em;
-	
 }
 
 main > div:nth-of-type(1) img{
 	grid-row-start: 1;
-	width: 100%;
 	justify-self: center;
 	align-self: end;
+	width: 100%;
 }
 
-main > img:nth-of-type(2){
-	place-content: center;
+main > img{
 	padding: 4em 2em 6em 2em;
 	justify-self: center;
 	align-self: center;
 	width: 100%;
+	
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -150,44 +140,45 @@ main > img:nth-of-type(2){
 	}
 }
 
-section:nth-of-type(2){
+section:nth-of-type(3){
 	place-content: center;
 }
 
-section:nth-of-type(2) h2{
+section:nth-of-type(3) h2{
 	font-family: Absolut,Arial, sans-serif;
 	font-size: 2.7em ;
-	line-height: 80%;
 	color:var(--blue);
 	text-align: center;
+	line-height: 80%;
 	padding: 1em .5em .3em .5em; 
 
 }
 
-section:nth-of-type(2) h2 strong{
+section:nth-of-type(3) h2 strong{
 	font-family: AbsolutHandWritten,Arial, sans-serif;
 	color:var(--blue);
 
 
 }
 
-section:nth-of-type(2) p{
-	padding: .8em 2em 0 2em;
+section:nth-of-type(3) p{
     font-family: Absolutmedium, arial, sans-serif;
     font-size: 1.2em;
+	color: var(--black);
+    text-align: center;
     line-height: 150%;
+	padding: .8em 2em 0 2em;
     justify-self: center;
     align-self: end;
-    color: var(--black);
-    text-align: center;
+    
 }
 
-section:nth-of-type(2) p:last-of-type{
+section:nth-of-type(3) p:last-of-type{
 	padding-top: 1em;
 	padding-bottom: 2em;
 }
 
-section:nth-of-type(3){
+section:nth-of-type(4){
 	background: url("../images/SavePicture.webp");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -205,15 +196,16 @@ section:nth-of-type(3){
     }
 }
 
-section:nth-of-type(3) h3{
+section:nth-of-type(4) h3{
 	display: grid;
+ 
 	font-family: Absolut, arial, sans-serif;
 	font-size: 5.3em;
-	line-height: 90%;
-	padding: .5em 0;
-	color: var(--white);
+	color: var(--whiteCollab);
 	text-align: center;
-	
+	line-height: 90%;
+
+	padding: .5em 0;
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -222,24 +214,21 @@ section:nth-of-type(3) h3{
 	}
 }
 
-section:nth-of-type(3) h3 strong{
+section:nth-of-type(4) h3 strong{
 	font-family: AbsolutHandWritten, arial, sans-serif;
 }
 
-section:nth-of-type(3) img{
+section:nth-of-type(4) img{
 	width: 100%;
 }
 
-main > p{
-	place-content: center;
-	padding: 3em 2em 0 2em;
-    font-family: Absolutmedium, arial, sans-serif;
+main > p{ 
+	font-family: Absolutmedium, arial, sans-serif;
     font-size: 1.25em;
-    line-height: 150%;
-    justify-self: center;
-    align-self: end;
-    color: var(--black);
-    text-align: center;
+	color: var(--black);
+	text-align: center;
+	line-height: 150%;
+	padding: 3em 2em 0 2em;
 }
 
 main > p:last-of-type{

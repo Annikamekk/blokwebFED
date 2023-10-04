@@ -13,9 +13,17 @@ function toggleMenu() {
 }
 
 
-// var myImage = document.querySelector("#image");
+var myImage = document.querySelector("section:nth-of-type(1) img");
+var imageButton = document.querySelector("section:nth-of-type(1) button");
 
-// function changeMyImage(){
-//     myImage.src ="../images/SavePicture.webp";
-// }
+imageButton.onclick = toggleImage;
+
+console.log(myImage);
+
+function toggleImage(){
+    myImage.classList.toggle("wissel");
+    imageButton.classList.toggle("verander");
+}
+
+
 
