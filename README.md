@@ -290,7 +290,11 @@ laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/fontSize.png" width="375px" alt="je kan de fontsize veranderen">
+  <img src="readme-images/ChangeImage.png" width="375px" alt="je kan de img veranderen">
+ <img src="readme-images/movingImage.png" width="375px" alt="de achtergrond img beweegt">
+
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
