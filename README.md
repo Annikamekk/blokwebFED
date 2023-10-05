@@ -296,7 +296,6 @@ laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik 
 
 
 
-
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
