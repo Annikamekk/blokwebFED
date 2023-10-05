@@ -44,10 +44,11 @@
 	--focus:rgb(234, 232, 232);
 	--yellow:#FFFF00;
 	--beigepink:#E8D8D0;
-	--pink:palevioletred;
+	--pink:#d84c7b;
 	--whiteCollab:white;
 	--grey: gray;
 	--button:white;
+	--button-color:#d84c7b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,12 +67,22 @@
 		--grey:white;
 		--button:#0000BD;
 	
+	
 	}
+}
+
+:root.verander{
+	--blue:#d84c7b;
+	--button-color:#0000BD;
+	--beigepink:#d84c7b;
 }
 
 html:has( [value="big"]:checked ) {
 	font-size:1.3em; 
 }
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -102,7 +113,7 @@ header{
 
 	background-color: var(--blue);
 
-	height: 3em;
+	height: 3.1em;
 	width: 100%;
 }
 
@@ -112,6 +123,10 @@ header > a{
 }
 
 header > a:focus{
+	font-family: Absolutnormal, Arial, sans-serif;
+	color: var(--white);
+	background-color: var(--blue);
+	padding: .7em;
 	position: absolute;
 	left: 5em;
 }
@@ -154,6 +169,21 @@ header button.open span:nth-of-type(1) {
 header button.open span:nth-of-type(2) {
 	transform: translateY(0) rotate(-45deg);
 	background-color:black;
+}
+
+header > h1{
+	font-family: Absolut, Arial,sans-serif;
+	font-size: 2.6em;
+	color:var(--white);
+	/* -webkit-text-stroke: .5px #fff; */
+	letter-spacing: .02em;
+}
+header a{
+	text-decoration: none;
+}
+header a:visited{
+	text-decoration-line: none;
+	color:var(--white);
 }
 
 nav {
@@ -210,19 +240,6 @@ nav.open {
 	translate:0 0;
   }
 
-header > h1{
-	font-family: Absolut,Impact;
-	font-size: 2.5em;
-	color:var(--white);
-}
-header a{
-	text-decoration: none;
-}
-header a:visited{
-	text-decoration-line: none;
-	color:var(--white);
-}
-
 nav > section{
 	color: var(--black);
 	font-family: Absolutnormal, Arial, sans-serif;
@@ -230,7 +247,7 @@ nav > section{
 	
 }
 
-nav> section h2{
+nav > section h2{
 	font-size: 1.3em;
 	font-family: Absolutmedium,Arial, sans-serif;
 	color: var(--black);

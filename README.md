@@ -125,10 +125,10 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
   
   
   | Joost:
-    mag een <h2> in een <a>?
+    mag een h2 in een a?
     wanneer svg en wanneer een button?
-    Mag een <ul> in een <ul>?
-    wat zijn handige volgordes van  <img> <p> <h2> enz.?
+    Mag een ul in een ul?
+    wat zijn handige volgordes van  img p h2 enz.?
    
   |Annika:
     Hoe werkt de nav samen met de button in het hamburger menu?
@@ -144,10 +144,8 @@ Ik heb problemen met het ABSOLUT. font, want het lijkt niet te werken, dus moet 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  1e vraag: een class zetten op beide (nav en de button) via javascript en die dan veranderen. 
+  2e vraag: grid-column-start:1    grid-column-end:4
 
 </details>
 
@@ -195,6 +193,12 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  met:
+  content:"";
+	order:;
+	transition:;
+
+  background-size, repeat:no-repeat, background-position. 
 
    kreeg goede feedback bij het voortgang gesprek, want mocht geen section gebruiken zonder h er bij, dus ie moest ik verwijderen of veranderen naar een div. 
 
@@ -213,8 +217,15 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+    Alles was duidelijk na de screenreader, ik moest nog skip the content button toevoegen. maar alle headings klopte, nav werd goed uitgelegd. 
+    alleen soms werden de teksten twee keer opgenoemd. 
 
-    eigenlijk ben ik dus al grootendeels klaar met de content schrijven, maar moetn u nog animaties er in stoppen. Ik heb wel al kleine animaties toegevoegd maar dat is nog niet genoeg. 
+
+<img src="readme-images/BlueWhitecontrast.png" width="375px" alt="blue and white contrast passes with a 12.1">
+<img src="readme-images/pinkWhitecontrast.png" width="375px" alt="pink and white contrast passes with a 4">
+-----------------
+
+    eigenlijk ben ik dus al grootendeels klaar met de content schrijven, maar moet nu nog animaties er in stoppen. Ik heb wel al kleine animaties toegevoegd maar dat is nog niet genoeg. 
 
     daarna heb ik dark mode en reduce motion toegevoegd dus ik moet nu nog 3 andere toevoegen tot het voldoende is. 
 
@@ -229,7 +240,7 @@ hoe kan ik het beste stap voor stap verder met mijn css? waar moet ik beginnen?
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -261,6 +272,10 @@ Hoe kan ik met een button(en toggle) de img veranderen? is een formulier toevoeg
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+met een classList.toggle een class toevoegen waarbij de img veranderd met concent: url()
+
+
+
 laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik heb de img kunnen veranderen met jacascript en een button waar de kleur van de button ook veranderd en daarnaast ook gevraagd hoe ik de fontsize kan veranderen en dat is ook gelukt. 
 
 </details>
@@ -271,7 +286,7 @@ laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik 
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -281,13 +296,29 @@ laatste gesprek heeft me veel goed gedaan, want ben nu bijna helemaal klaar. Ik 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Ik vond het heel leuk om met de button een img te veranderen die dan ook de hele layout met kleur veranderd. Daar ben ik met meest trots op. 
+daarnaast was ik fsnatiek bezig met de hover/focus states van buttons en list items. dat ging ook heel gemakkelijk. 
 
+ook was ik heel trots op dat ik met tekst en een plaatje en daar achter nog een achtergrond 'aan de praat' kreeg.
+
+
+  <img src="readme-images/OriginalColorScheme.png" width="375px" alt="blue color scheme">
+  <img src="readme-images/ChangedColorScheme.png" width="375px" alt="changed to pink color scheme">
+  <img src="readme-images/normalState.png" width="375px" alt="list item die normaal dr uitziet">
+  <img src="readme-images/HoverState.png" width="375px" alt="list items die vergroot wordt">
+  <img src="readme-images/sectionWithMore.png" width="375px" alt="een section met verschillende achtergronden ">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  op zich met veel uitleg ging alles wel prima, alleen ik had in het begin wel veel moeite met de plaatsing van mijn tekst en img en button, maar met grid plaatsing is het uiteindelijk gelukt in hoeverre(helemaal niet responsive).
+
+  ook moest ik wel goed nadenken hoe ik 4 dezelfde elementen met daarin elementen bij elkaar moet doen en dan 2(rechterkant) daarvan ook nog beetje afwijken van de andere 2(linker kant) nu staat de tekst ook niet helemaal recht onder het plaatje.
+  Maar is ook gefixed met padding etc.
+
+ <img src="readme-images/Firstsection.png" width="375px" alt="eerste section in mn website">
+  <img src="readme-images/sectionInSection.png" width="375px" alt="sections in section met a">
+    <img src="readme-images/fixedtekst.png" width="375px" alt="tekst is aligned">
 </details>
 
 

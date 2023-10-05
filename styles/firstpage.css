@@ -1,7 +1,7 @@
 
 main > section:nth-of-type(1){
 	display:grid;
-  	grid-auto-columns:25em;  
+  	grid-auto-columns:21em;  
 	grid-template-rows:min-content 4em 12em ;
 	place-content: center;
 
@@ -32,8 +32,6 @@ main > section:nth-of-type(1) em{
 main > section:nth-of-type(1) em{
 	font-family: AbsolutHandWritten,arial,sans-serif;
 }
-
-
 
 main > section:nth-of-type(1) h3{
 	display: grid;
@@ -82,9 +80,6 @@ main > section:nth-of-type(1) img{
 	justify-self:end ;
 	align-self: end;
 	width: 6em;
-	margin-right:2.5em;
-	
-
 }
 
 main > section:nth-of-type(1) img:hover{
@@ -473,9 +468,11 @@ div > section{
 div > section h4{
 	grid-row-start: 2;
 	font-family: Absolutmedium, Arial,sans-serif;
-	font-size: .9em;
-	width: 9em;
+	font-size: .8em;
+	width: 13em;
 	height: 4em;
+	padding-left: 1em;
+	line-height: 135%;
 	
 }
 
@@ -487,10 +484,10 @@ div > section:nth-of-type(2) h4{
 }
 
 div > section:nth-of-type(2) h4, section:nth-of-type(4) h4{
-	padding-left: .5em;
+	padding-left: 1.8em;
 }
 div > section:nth-of-type(2) a, section:nth-of-type(4) a{
-	padding-left: .5em;
+	padding-left: 1.6em;
 }
 
 div > section img{
@@ -509,6 +506,7 @@ div > section a{
 	
 	height: 5em;
 	padding-bottom: 2em;
+	padding-left: 1em;
 }
 
 div > section a:hover{

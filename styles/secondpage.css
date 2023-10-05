@@ -27,7 +27,7 @@ main > section:nth-of-type(1) button{
 	font-family: Absolutbold, arial, sans-serif;
 	font-size: .8em;
 	color: var(--whiteCollab);
-	background-color: var(--pink);
+	background-color: var(--button-color);
 
 	border: none;
 	border-radius: .2em;
@@ -35,11 +35,6 @@ main > section:nth-of-type(1) button{
 	padding: .8em;
 	bottom: .5em;
 	right: .5em	;
-}
-
-main > section:nth-of-type(1) button.verander{
-	color: var(--white);
-	background-color: var(--blue);
 }
 
 main > section:nth-of-type(2){
